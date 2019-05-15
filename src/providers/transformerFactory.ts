@@ -1,4 +1,4 @@
-import { EventType } from "../contracts/events/event";
+import { EventType } from "common";
 import { IEventTransformer } from "../contracts/transformers/eventTransformer";
 
 export abstract class ProviderTransformerFactory {

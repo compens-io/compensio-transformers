@@ -1,4 +1,4 @@
-import { IEvent } from "./contracts/events/event";
+import { IEvent } from "common";
 import { TransformerProvider } from "./providers/providers";
 import { TransformerFactory } from "./transformerFactory";
 

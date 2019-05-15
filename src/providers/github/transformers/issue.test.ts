@@ -1,4 +1,4 @@
-import { IssueAction } from "../../../contracts/events/issue";
+import { IssueAction } from "common";
 import { GithubIssueTransformer } from "./issue";
 
 describe("Github Issue Transformer", () => {

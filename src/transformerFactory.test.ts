@@ -1,4 +1,4 @@
-import { IEventTransformer } from "./contracts/transformers/eventTransformer";
+import { IEventTransformer } from "./contracts/eventTransformer";
 import { GithubIssueTransformer } from "./providers/github/transformers/issue";
 import { GithubPullRequestTransformer } from "./providers/github/transformers/pullRequest";
 import { TransformerProvider } from "./providers/providers";

@@ -1,5 +1,5 @@
-import { EventType } from "../../contracts/events/event";
-import { IEventTransformer } from "../../contracts/transformers/eventTransformer";
+import { EventType } from "common";
+import { IEventTransformer } from "../../contracts/eventTransformer";
 import { ProviderTransformerFactory } from "../transformerFactory";
 import { GithubIssueTransformer } from "./transformers/issue";
 import { GithubPullRequestTransformer } from "./transformers/pullRequest";

@@ -1,4 +1,4 @@
-import { IIssueEvent, IssueAction } from "./contracts/events/issue";
+import { IIssueEvent, IssueAction } from "common";
 import { TransformerProvider } from "./providers/providers";
 import { registerFactories } from "./registerFactories";
 import { Transformer } from "./transformer";

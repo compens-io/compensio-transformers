@@ -1,5 +1,5 @@
-import { IPullRequestEvent, PullRequestAction } from "../../../contracts/events/pullRequest";
-import { PullRequestTransformer } from "../../../contracts/transformers/pullRequestTransformer";
+import { IPullRequestEvent, PullRequestAction } from "common";
+import { PullRequestTransformer } from "../../../contracts/pullRequestTransformer";
 
 
 export class GithubPullRequestTransformer extends PullRequestTransformer {

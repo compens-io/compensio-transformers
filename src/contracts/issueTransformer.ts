@@ -1,4 +1,4 @@
-import { IIssueEvent, IssueAction } from "../events/issue";
+import { IIssueEvent, IssueAction } from "common";
 import { IEventTransformer } from "./eventTransformer";
 
 export abstract class IssueTransformer implements IEventTransformer {

@@ -1,4 +1,4 @@
-import { PullRequestAction } from "../../../contracts/events/pullRequest";
+import { PullRequestAction } from "common";
 import { GithubPullRequestTransformer } from "./pullRequest";
 
 describe("Github PullRequest Transformer", () => {

@@ -1,5 +1,5 @@
-import { IIssueEvent, IssueAction } from "../../../contracts/events/issue";
-import { IssueTransformer } from "../../../contracts/transformers/issueTransformer";
+import { IIssueEvent, IssueAction } from "common";
+import { IssueTransformer } from "../../../contracts/issueTransformer";
 
 
 export class GithubIssueTransformer extends IssueTransformer {
