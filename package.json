@@ -23,18 +23,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tbarlow12/oss-transformers.git"
+    "url": "git+https://github.com/compens-io/transformers.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tbarlow12/oss-transformers/issues"
+    "url": "https://github.com/compens-io/transformers/issues"
   },
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/tbarlow12/oss-transformers#readme",
+  "homepage": "https://github.com/compens-io/transformers#readme",
   "devDependencies": {
     "@types/jest": "^24.0.12",
     "@types/node": "^12.0.0",
