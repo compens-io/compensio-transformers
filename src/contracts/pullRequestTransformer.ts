@@ -1,4 +1,4 @@
-import { IPullRequestEvent, PullRequestAction } from "common";
+import { IPullRequestEvent, PullRequestAction } from "compensio-common";
 import { IEventTransformer } from "./eventTransformer";
 
 export abstract class PullRequestTransformer implements IEventTransformer {

@@ -1,7 +1,7 @@
+import { TransformerProviderType } from "compensio-common";
 import { IEventTransformer } from "./contracts/eventTransformer";
 import { GithubIssueTransformer } from "./providers/github/transformers/issue";
 import { GithubPullRequestTransformer } from "./providers/github/transformers/pullRequest";
-import { TransformerProvider } from "./providers/providers";
 import { registerFactories } from "./registerFactories";
 import { TransformerFactory } from "./transformerFactory";
 
@@ -19,7 +19,7 @@ describe("Transformer Factory tests", () => {
         function testGetTransformer(events: string[], transformerClass: any) {
             for (const event of events) {
                 const data = loadSampleData(event);
-                const transformer: IEventTransformer = TransformerFactory.getTransformer(TransformerProvider.GITHUB, data);
+                const transformer: IEventTransformer = TransformerFactory.getTransformer(TransformerProviderType.GITHUB, data);
                 expect(transformer).toBeInstanceOf(transformerClass);
             }
         }
@@ -34,7 +34,7 @@ describe("Transformer Factory tests", () => {
 
         it("should throw error for unregistered transformer", () => {
             const data = loadSampleData("issue_opened");
-            expect(() => TransformerFactory.getTransformer(TransformerProvider.NONE, data)).toThrowError();
+            expect(() => TransformerFactory.getTransformer(TransformerProviderType.NONE, data)).toThrowError();
         });
     });
 });

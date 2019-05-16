@@ -1,4 +1,4 @@
-import { IEvent, IssueAction, PullRequestAction } from "common";
+import { IEvent, IssueAction, PullRequestAction } from "compensio-common";
 
 export interface IEventTransformer {
     transform: (event: any) => IEvent;

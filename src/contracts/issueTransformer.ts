@@ -1,4 +1,4 @@
-import { IIssueEvent, IssueAction } from "common";
+import { IIssueEvent, IssueAction } from "compensio-common";
 import { IEventTransformer } from "./eventTransformer";
 
 export abstract class IssueTransformer implements IEventTransformer {

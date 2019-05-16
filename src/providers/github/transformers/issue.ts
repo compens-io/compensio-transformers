@@ -1,4 +1,4 @@
-import { IIssueEvent, IssueAction } from "common";
+import { IIssueEvent, IssueAction } from "compensio-common";
 import { IssueTransformer } from "../../../contracts/issueTransformer";
 
 

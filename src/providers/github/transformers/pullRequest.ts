@@ -1,4 +1,4 @@
-import { IPullRequestEvent, PullRequestAction } from "common";
+import { IPullRequestEvent, PullRequestAction } from "compensio-common";
 import { PullRequestTransformer } from "../../../contracts/pullRequestTransformer";
 
 

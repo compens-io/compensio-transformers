@@ -1,4 +1,4 @@
-import { IssueAction } from "common";
+import { IssueAction } from "compensio-common";
 import { GithubIssueTransformer } from "./issue";
 
 describe("Github Issue Transformer", () => {

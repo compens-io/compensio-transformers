@@ -1,4 +1,4 @@
-import { EventType } from "common";
+import { EventType } from "compensio-common";
 import { IEventTransformer } from "../contracts/eventTransformer";
 
 export abstract class ProviderTransformerFactory {

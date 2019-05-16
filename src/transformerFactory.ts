@@ -1,10 +1,10 @@
+import { TransformerProviderType } from "compensio-common";
 import { IEventTransformer } from "./contracts/eventTransformer";
-import { TransformerProvider } from "./providers/providers";
 import { ProviderTransformerFactory } from "./providers/transformerFactory";
 
 export class TransformerFactory {
 
-    public static getTransformer(provider: TransformerProvider, event: any): IEventTransformer {
+    public static getTransformer(provider: TransformerProviderType, event: any): IEventTransformer {
         const providerFactory = TransformerFactory.registry.get(provider);
         const transformer = providerFactory && providerFactory.getTransformer(event);
         if (!transformer) {
@@ -14,12 +14,12 @@ export class TransformerFactory {
         }
     }
 
-    public static register(provider: TransformerProvider, factory: ProviderTransformerFactory) {
+    public static register(provider: TransformerProviderType, factory: ProviderTransformerFactory) {
         if (!TransformerFactory.registry) {
-            TransformerFactory.registry = new Map<TransformerProvider, ProviderTransformerFactory>();
+            TransformerFactory.registry = new Map<TransformerProviderType, ProviderTransformerFactory>();
         }
         TransformerFactory.registry.set(provider, factory);
     }
 
-    private static registry: Map<TransformerProvider, ProviderTransformerFactory>;
+    private static registry: Map<TransformerProviderType, ProviderTransformerFactory>;
 }

@@ -1,4 +1,4 @@
-import { PullRequestAction } from "common";
+import { PullRequestAction } from "compensio-common";
 import { GithubPullRequestTransformer } from "./pullRequest";
 
 describe("Github PullRequest Transformer", () => {
